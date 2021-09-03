@@ -3,7 +3,6 @@ const cityName = document.getElementById('div-container');
 const searchTemperature = () =>{
     const city = document.getElementById('city-name').value;
     cityName.textContent = ''
-    //console.log(inputField);
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}&units=metric`;
 
     fetch(url)
